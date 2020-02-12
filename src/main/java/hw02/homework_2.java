@@ -54,7 +54,7 @@ public class homework_2 {
                 end = false;
                 System.out.println("You Have Won! in <" + counter + "> times!");
                 System.out.println(" ######  The target was in (" + pt_i + " ; " + pt_j + ")  ######");
-                arr[target_i][target_j] = 'x';
+                arr[target_i][target_j] = 'X';
             }
             else {
                 arr[pt_i-1][pt_j-1] = '*';
@@ -66,20 +66,20 @@ public class homework_2 {
                 {
                     if (i > 0 && i < 4)
                     {
-                        if((arr[i-1][j] == '*' || arr[i-1][j] == '#') && (arr[i][j] == '*' || arr[i][j] == '#') && (arr[i+1][j] == '*' || arr[i+1][j] == '#'))
+                        if((arr[i-1][j] == '*' || arr[i-1][j] == 'x') && (arr[i][j] == '*' || arr[i][j] == 'x') && (arr[i+1][j] == '*' || arr[i+1][j] == 'x'))
                         {
-                            arr[i-1][j] = '#';
-                            arr[i][j] = '#';
-                            arr[i+1][j] = '#';
+                            arr[i-1][j] = 'x';
+                            arr[i][j] = 'x';
+                            arr[i+1][j] = 'x';
                         }
                     }
                     if (j > 0 && j < 4)
                     {
-                        if((arr[i][j-1] == '*' || arr[i][j-1] == '#') && (arr[i][j] == '*' || arr[i][j] == '#') && (arr[i][j+1] == '*' || arr[i][j+1] == '#'))
+                        if((arr[i][j-1] == '*' || arr[i][j-1] == 'x') && (arr[i][j] == '*' || arr[i][j] == 'x') && (arr[i][j+1] == '*' || arr[i][j+1] == 'x'))
                         {
-                            arr[i][j-1] = '#';
-                            arr[i][j] = '#';
-                            arr[i][j+1] = '#';
+                            arr[i][j-1] = 'x';
+                            arr[i][j] = 'x';
+                            arr[i][j+1] = 'x';
                         }
                     }
                 }
