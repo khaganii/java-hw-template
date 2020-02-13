@@ -57,7 +57,7 @@ public class homework_2 {
                 arr[target_i][target_j] = 'X';
             }
             else {
-                arr[pt_i-1][pt_j-1] = '*';
+                arr[pt_i - 1][pt_j - 1] = '*';
                 end = true;
             }
             for (int i = 0; i <=5; i++) { //only for printing
