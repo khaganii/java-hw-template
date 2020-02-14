@@ -23,7 +23,7 @@ public class homework_3 {
             System.out.println("Please, Enter the day of the week: ");
             boolean change = false;
             String changable_day = "";
-            String choise = in.nextLine().toLowerCase(); //all letters to lowercase
+            String choise = in.nextLine().trim().toLowerCase(); //all letters to lowercase
             if(choise.length() > 0) {
                 choise = capital(choise);
                 if (choise.length() > 10 && (choise.substring(0, 6).equals("Change") || choise.substring(0, 10).equals("Reschedule"))) {
