@@ -69,7 +69,7 @@ public class homework_3 {
                     System.out.println("Change task of " + capital(changable_day) + ":");
                     System.out.print("Enter new task for " + capital(changable_day) + ": ");
                     for (int i = 0; i < 7; i++) {
-                        if(sedule[i][0].equals(changable_day))
+                        if (sedule[i][0].equals(changable_day))
                             sedule[i][1] = in.nextLine();
                     }
                     System.out.println("######  Your task has changed! ######");
