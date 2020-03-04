@@ -30,7 +30,7 @@ public class homework_3 {
                     String[] words = choise.split(" ");
                     for (String word : words) {
                         for (int j = 0; j < 7; j++) {
-                            if (capital(word).equals(sedule[j][0])) {
+                            if (capital(word).equals(sedule[j][0]) || !(word.equals(" "))) {
                                 changable_day = capital(word);
                                 change = true;
                                 break;

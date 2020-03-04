@@ -86,7 +86,7 @@ public class homework_1 {
                         System.out.println(results[0][i] + "  ---  " + results[1][i] + " Time(s)");
                     break;
                 }
-                else System.out.println("Please, enter correct characters! (Your Choise is wrong!)");
+                else System.out.println("Please, enter correct characters! (Your Choice is wrong!)");
             }
             if (!a) {
                 System.out.println("Thanks for trying");
