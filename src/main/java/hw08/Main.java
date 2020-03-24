@@ -42,10 +42,6 @@ public class Main {
     System.out.println("Family Count: " + family.countFamily());
     System.out.println(family.toString());
 
-//    for (int i = 0; i <= 100000000 ; i++) {
-//       new Human();
-//    }
-
   }
 
 }

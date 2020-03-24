@@ -63,8 +63,9 @@ public class Family {
     this.pets = pets;
   }
 
-  void addChild(Human child) {
+  int addChild(Human child) {
     children.add(child);
+    return children.size();
   }
 
   boolean deleteChild(int index) {

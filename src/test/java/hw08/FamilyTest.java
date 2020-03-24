@@ -1,8 +1,11 @@
-package hw06;
+package hw08;
 
 import org.junit.jupiter.api.BeforeEach;
 
-    import static org.junit.jupiter.api.Assertions.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class FamilyTest {
 
@@ -10,7 +13,7 @@ class FamilyTest {
 
   @BeforeEach
   void setUp() {
-    Human[] children = new Human[5];
+    List<Human> children = new ArrayList<>();
     Human mother = new Human("Elvin", "Elvin", 1984);
     Human father = new Human("Emin", "Emin", 1982);
     this.testFamily = new Family(mother, father, children);
@@ -18,8 +21,7 @@ class FamilyTest {
 
   @org.junit.jupiter.api.Test
   void addChild() {
-    Human child1 = new Human("Nick", "Elvin", 1991);
-
+    Human child1 = new Human("Elvinas", "Chess", 1991);
     int expected = 1;
     int actual = testFamily.addChild(child1);
     assertEquals(expected, actual);
