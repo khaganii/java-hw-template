@@ -1,33 +1,37 @@
-package hw07;
+package hw08;
+
+import java.util.*;
 
 public class Main {
 
   public static void main(String[] args) {
-    String[] habitsPet = new String[] {"eat", "sleep", "play"};
-    String[][] schedule = new String[7][2];
-    schedule[0][0] = Doaysofweek.Monday.name();
-    schedule[0][1] = "Speaking";
-    schedule[1][0] = Doaysofweek.Tuesday.name();
-    schedule[1][1] = "Listening";
-    schedule[2][0] = Doaysofweek.Wednesday.name();
-    schedule[2][1] = "Reading";
-    schedule[3][0] = Doaysofweek.Thursday.name();
-    schedule[3][1] = "Writing";
-    schedule[4][0] = Doaysofweek.Friday.name();
-    schedule[4][1] = "Sleeping";
-    schedule[5][0] = Doaysofweek.Saturday.name();
-    schedule[5][1] = "Relaxing";
-    schedule[6][0] = Doaysofweek.Sunday.name();
-    schedule[6][1] = "Coding";
+    HashSet<String> habitsPet = new HashSet<>(Arrays.asList("eat", "sleep", "play"));
+    HashMap<String, String> schedule = new HashMap<>();
+    schedule.put(Doaysofweek.Monday.name(),
+        "Speaking");
+    schedule.put(Doaysofweek.Tuesday.name(),
+        "Listening");
+    schedule.put(Doaysofweek.Wednesday.name(),
+        "Reading");
+    schedule.put(Doaysofweek.Thursday.name(),
+        "Writing");
+    schedule.put(Doaysofweek.Friday.name(),
+        "Sleeping");
+    schedule.put(Doaysofweek.Saturday.name(),
+        "Relaxing");
+    schedule.put(Doaysofweek.Sunday.name(),
+        "Coding");
 
-    Human[] children = new Human[5];
+    List<Human> children = new ArrayList<>();
     Human mother = new Human("Lilly", "Gasumov", 1970);
     Human father = new Human("Leo", "Gasumov", 1961);
     Pet pet = new Dog("Jack", 2, 60, habitsPet);
+    Set<Pet> pets = new HashSet<>();
+    pets.add(pet);
     Human child1 = new Human("Alex", "Gasumov", 1991, 120, schedule);
     Human child2 = new Human("Nick", "Gasumov", 1993, 130, schedule);
     Human child3 = new Human("Dim", "Gasumov", 1995, 140, schedule);
-    Family family = new Family(mother, father, children, pet);
+    Family family = new Family(mother, father, children, pets);
 
     family.addChild(child1);
     family.addChild(child1);

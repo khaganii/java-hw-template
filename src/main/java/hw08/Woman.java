@@ -1,0 +1,14 @@
+package hw08;
+
+import java.util.ArrayList;
+
+public final class Woman extends Human {
+  @Override
+  String greetPet(int petIndex) {
+    return String.format("Hello, my %s. I am a woman\n", new ArrayList<>(getFamily().getPet()).get(petIndex).getNickname());
+  }
+
+  String makeUp() {
+    return String.format("I can make up\n");
+  }
+}

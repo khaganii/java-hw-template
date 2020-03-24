@@ -20,7 +20,7 @@ public class Main {
     schedule[6][0] = Doaysofweek.Sunday.name();
     schedule[6][1] = "Coding";
 
-    Human[] children = new Human[5];
+    Human[] children = new Human[0];
     Human mother = new Human("Lilly", "Gasumov", 1970);
     Human father = new Human("Leo", "Gasumov", 1961);
     Pet pet = new Pet(Species.Dog, "Jack", 2, 60, habitsPet);
