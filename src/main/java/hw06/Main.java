@@ -35,7 +35,7 @@ public class Main {
     family.addChild(child3);
     System.out.println("Family Count: " + family.countFamily());
     family.deleteChild(child3);
-    System.out.println("Family Count: " + family.countFamily());
+    System.out.println("Family_Count: " + family.countFamily());
     System.out.println(family.toString());
 
 //    for (int i = 0; i <= 100000000 ; i++) {
