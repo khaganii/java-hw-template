@@ -8,7 +8,7 @@ public class Family {
 
   private Human mother;
   private Human father;
-  private List<Human> children;
+  private List<Human> children = null;
   private int childIndex = 0;
   private Set<Pet> pets;
 

@@ -42,11 +42,11 @@ public class FamilyController {
     familyService.deleteFamilyByIndex(index);
   }
 
-  public String bornChild(Family family, String girlName, String boyName){
+  public Family bornChild(Family family, String girlName, String boyName){
     return familyService.bornChild(family, girlName, boyName);
   }
 
-  public String adoptChild(Family family, Human child){
+  public Family adoptChild(Family family, Human child){
     return familyService.adoptChild(family, child);
   }
 

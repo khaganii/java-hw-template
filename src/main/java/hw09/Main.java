@@ -38,18 +38,14 @@ public class Main {
     Human child3 = new Human("Dim", "Gasumov", 1995, 140, schedule);
     Family family = new Family(mother, father, children, pets);
 
+
     familyController.saveFamily(family);
 
-    familyController.displayAllFamilies();
+    System.out.println(familyController.getAllFamilies().toString());
     System.out.println(familyController.count());
     familyController.createNewFamily(new Human("ALI", "Guseynov", 45), new Human("Lilly", "Guseynova", 40));
     System.out.println(familyController.getAllFamilies().toString());
     System.out.println(familyController.count());
-
-
-
-
-
   }
 
 }

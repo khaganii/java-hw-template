@@ -9,7 +9,6 @@ public class CollectionFamilyDao implements Dao<Family> {
 
   @Override
   public List<Family> getAllFamilies() {
-    familyList = new ArrayList<>();
     return familyList;
   }
 

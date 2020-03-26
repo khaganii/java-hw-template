@@ -9,6 +9,7 @@ import java.util.*;
 
 public class FamilyService {
   CollectionFamilyDao familyDao = new CollectionFamilyDao();
+
   public List<Family> getAllFamilies(){
     return familyDao.getAllFamilies();
   }
@@ -57,25 +58,24 @@ public class FamilyService {
     familyDao.deleteFamily(index);
   }
 
-  public String bornChild(Family family, String girlName, String boyName){
+  public Family bornChild(Family family, String girlName, String boyName){
     Random random = new Random();
     int num = random.nextInt(2);
     String name = "";
-    String surname = family.getFather().getSurname();
     if (num == 0) name = girlName;
     if (num == 1) name = boyName;
-    Human child = new Human(name, surname, 0);
-    List<Human> children = new ArrayList<>(family.getChildren());
+    Human child = new Human(name, "surname", 0);
+    List<Human> children = new ArrayList<>();
     children.add(child);
     family.setChildren(children);
-    return "the renewed family";
+    return family;
   }
 
-  public String adoptChild(Family family, Human child){
+  public Family adoptChild(Family family, Human child){
     List<Human> children = new ArrayList<>(family.getChildren());
     children.add(child);
     family.setChildren(children);
-    return "the renewed family";
+    return family;
   }
 
   public void deleteAllChildrenOlderThen(int age){
