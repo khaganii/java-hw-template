@@ -5,19 +5,19 @@ public class Main {
   public static void main(String[] args) {
     String[] habitsPet = new String[] {"eat", "sleep", "play"};
     String[][] schedule = new String[7][2];
-    schedule[0][0] = Doaysofweek.Monday.name();
+    schedule[0][0] = Daysofweek.Monday.name();
     schedule[0][1] = "Speaking";
-    schedule[1][0] = Doaysofweek.Tuesday.name();
+    schedule[1][0] = Daysofweek.Tuesday.name();
     schedule[1][1] = "Listening";
-    schedule[2][0] = Doaysofweek.Wednesday.name();
+    schedule[2][0] = Daysofweek.Wednesday.name();
     schedule[2][1] = "Reading";
-    schedule[3][0] = Doaysofweek.Thursday.name();
+    schedule[3][0] = Daysofweek.Thursday.name();
     schedule[3][1] = "Writing";
-    schedule[4][0] = Doaysofweek.Friday.name();
+    schedule[4][0] = Daysofweek.Friday.name();
     schedule[4][1] = "Sleeping";
-    schedule[5][0] = Doaysofweek.Saturday.name();
+    schedule[5][0] = Daysofweek.Saturday.name();
     schedule[5][1] = "Relaxing";
-    schedule[6][0] = Doaysofweek.Sunday.name();
+    schedule[6][0] = Daysofweek.Sunday.name();
     schedule[6][1] = "Coding";
 
     Human[] children = new Human[5];

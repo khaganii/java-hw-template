@@ -1,5 +1,5 @@
 package hw07;
 
-public enum Doaysofweek {
+public enum Daysofweek {
   Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 }
