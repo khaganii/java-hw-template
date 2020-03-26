@@ -11,7 +11,7 @@ public class homework_1 {
         info[1][0] = "Salam";
         info[0][1] = "What is the mean of 'OK' in the Azerbaijan language?";
         info[1][1] = "Yaxsi";
-        info[0][2] = "What is the mean of 'Good-bye' in the Azerbaijan language?";
+        info[0][2] = "What is the mean of 'Good-bye' in the Azerbaijan lang?";
         info[1][2] = "Helelik";
         info[0][3] = "What is the mean of 'God-willing' in the Azerbaijan language?";
         info[1][3] = "Sukur Allaha";
