@@ -17,7 +17,7 @@ public class homework_3 {
         sedule[5][0] = "Saturday";
         sedule[5][1] = "cocking meals and doing homework";
         sedule[6][0] = "Sunday";
-        sedule[6][1] = "studying at home and doing homework";
+        sedule[6][1] = "studying at home and doing home work";
         boolean exit = true;
         while (exit){
             System.out.println("Please, Enter the day of the week: ");
